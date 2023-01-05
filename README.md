@@ -1,2 +1,8 @@
-# Classificador-de-Uso-de-mascara-por-CNN
-Classificador de uso de máscaras através de CNN
+# Implementação de classificador para determinar uso correto de máscara de proteção contra COVID-19 em ambientes controlados
+
+Este projeto tem por objetivo de, através de um dateset contendo 853 imagens com diversos n°s de pessoas com máscara, sem máscara  e máscara vestida de forma errônea, treinar um modelo CNN para que este possa reconhecer e classificar de forma satisfatória imagens nessas 3 categorias. Fazendo uso do dataset disponibilizado pelo Kaggle, onde cada imagem possui um arquivo xml específico dela contendo as coordenadas dos rostos e a classificação prévia, cortamos cada imagem nos rostos específicos, aumentando  o dataset para 4064 imagens, que servem de base para o treinamento (70%), testes (20%) e validação (10%). Como resultado utilizamos 19 épocas para obter uma precisão de 0.96, um recall de 0.95 e um loss de 0.17.
+
+A metodologia utilizada para a implementação do programa consistirá de uma execução sequencial de várias etapas, dentre elas, a análise e tratamento da base de dados, onde serão selecionadas as features mais importantes e a limpeza de dados nulos e inválidos. Em seguida será feita uma visualização e separação de amostras usadas tanto na fase de treinamento quanto na fase de teste do algoritmo. Assim, com o auxílio de algumas bibliotecas, um banco de imagens provido da plataforma Kaggle, e visando aprimorar nossas habilidades em Aprendizagem Profunda, foi criado uma aplicação onde é possıvel notar se uma pessoa está ou não usando máscara, mediante dados que nos foram passados, como as coordenadas da posição do rosto em cada imagem. A implementação do modelo que será de uma Rede Neural Convolucional (CNN), e por fim, ser capaz de predizer com certa acurácia, a partir dos dados de entrada, se uma pessoa está fazendo o uso de máscara de proteção contra a COVID-19 ou não e se o uso está adequado.
+
+
+
